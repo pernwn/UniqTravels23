@@ -1,61 +1,119 @@
-.hPic{
-    background-image: url("../assets/pictures/beachy.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position:relative;
+.hPic {
+  background-image: url("../assets/pictures/beachy.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 
-    height:400px;
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  height: 400px;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
 
 }
 
-.mBtn{
-    background-color: red;
+.mBtn {
+  background-color: red;
 }
 
 
-html{
-    overflow:auto;
-    position: relative;
-    bottom:60px;
+html {
+  overflow: auto;
+  position: relative;
+  bottom: 60px;
 
+  scroll-behavior: smooth;
 
-    display:flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.search{
-    display:flex;
-    justify-content: center;
+.search {
+  display: flex;
+  justify-content: center;
 
-    text-align: center;
-    position: absolute;
-    top: 20%;
-    left: 50%;
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
 
-    
+
 }
 
-.dash{
-    border: dashed 1.5px;
+.dash {
+  border: dashed 1.5px;
 }
 
-.trust, .sorting{
-    display:flex;
-    justify-content: center;
-    justify-content: space-evenly;
+.trust,
+.sorting {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
 
 }
 
 .sorting button {
-    border: 1px solid #008b8bcb;
-    color:#008b8b;
+  border: 1px solid #008b8bcb;
+  color: #008b8b;
 }
 
-.rev{
-    min-width: 100%;
-    border-radius: 15px;
-    padding:5%;
-    background-color: #EEF9FF;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+.rev {
+  min-width: 100%;
+  border-radius: 15px;
+  padding: 5%;
+  background-color: #EEF9FF;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.gMap {
+  height: 60vh;
+  width: 100vw;
+  /*position: relative;*/
+}
+
+.map-container {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  height: 15em;
+  background-image: linear-gradient(to bottom, rgba(9, 83, 124, 0.59), #daebf4);
+  position: relative;
+  top: 0em;
+}
+
+.h_txt {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.body {
+  position: relative;
+  background-color: #EEF9FF;
+
+  height: 100%;
+  width: 100%;
+
+  padding: 16% 4%;
+
+  border-radius: 10%;
+
+}
+
+.b_head{
+  position:relative;
+  bottom:6em;
+
+}
+
+.u_img img{
+  border-radius: 10%;
+  border: 2px solid #EEF9FF 
+}
+
+.u_img {
+  display: flex;
+  justify-content: center;
+
 }

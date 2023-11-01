@@ -16,9 +16,12 @@ export default function ComplexCard(props) {
         maxHeight: '200px', // Set the max height for the card content
         overflow: 'hidden', // Hide the overflow
         textOverflow: 'ellipsis', // Add ellipsis for the text overflow
+        
       };
 return(
-    <Card>
+    <Card className="compcard"
+    
+    >
         <CardHeader
         avatar={ 
             <Avatar sx={{bgcolor: "info"}} aria-label="Destination">
@@ -31,10 +34,10 @@ return(
 
             </IconButton>
         }
-        >      
+            
             title={props.title}
             subheader={props.subheader} 
-        </CardHeader>
+        />
         <CardMedia
           component="img"
           height="200"
@@ -56,7 +59,7 @@ return(
                 <IconButton aria-label="share">
                 <ShareIcon />
                 </IconButton>
-                <NavLink to="/destination" sx={{fontSize:35}}>Read More</NavLink>
+                <NavLink to="/destination" sx={{fontSize:35 }}>Read More</NavLink>
         </CardActions>
     </Card>
 

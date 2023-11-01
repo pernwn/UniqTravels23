@@ -30,5 +30,10 @@ html{
 }
 
 .compcard{
-    max-width: 250px;
+width: 300px;
 }
+.horizontal-scroll {
+
+width: fit-content;
+
+  }
