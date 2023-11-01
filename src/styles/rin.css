@@ -1,0 +1,34 @@
+.hPic{
+    background-image: url("../assets/pictures/bookback.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+
+    height:400px;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+
+}
+
+html{
+    overflow:auto;
+    position: relative;
+    bottom:50px;
+
+
+    display:flex;
+    flex-direction: column;
+}
+
+.search{
+    display:flex;
+    justify-content: center;
+
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+.compcard{
+    max-width: 250px;
+}

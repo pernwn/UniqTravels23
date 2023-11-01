@@ -1,0 +1,61 @@
+.hPic{
+    background-image: url("../assets/pictures/beachy.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+
+    height:400px;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+
+}
+
+.mBtn{
+    background-color: red;
+}
+
+
+html{
+    overflow:auto;
+    position: relative;
+    bottom:60px;
+
+
+    display:flex;
+    flex-direction: column;
+}
+
+.search{
+    display:flex;
+    justify-content: center;
+
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+
+    
+}
+
+.dash{
+    border: dashed 1.5px;
+}
+
+.trust, .sorting{
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+
+.sorting button {
+    border: 1px solid #008b8bcb;
+    color:#008b8b;
+}
+
+.rev{
+    min-width: 100%;
+    border-radius: 15px;
+    padding:5%;
+    background-color: #EEF9FF;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
