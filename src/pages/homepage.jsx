@@ -12,6 +12,9 @@ import trust from "../assets/trustpilot.png"
 import { QuickTools, ScrollCards } from '../components/cards';
 import SearchBar from '../components/search';
 import "../styles/vic.css"
+import { SplashAnimation } from "../components/splash";
+//import SplashAnimation from "../components/splash";
+
 
 //import fra MUI
 import Box from '@mui/material/Box';
@@ -120,13 +123,14 @@ export default function HomePage() {
                     </Stack>
 
                 </Stack>
-
+    
                 <Box
                     sx={{
                         backgroundColor: customTheme => customTheme.palette.background.paper,
                         p: 2
                     }}
                 >
+                    <SplashAnimation />
                     {/*<ComReviews />*/}
                 </Box>
 

@@ -68,7 +68,7 @@ html {
   /*position: relative;*/
 }
 
-.map-container {
+.map-container, .sp {
   height: 100%;
   width: 100%;
 }

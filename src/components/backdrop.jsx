@@ -1,1 +1,0 @@
-//Denne komponent skal fremvise en loader når man trykke på en knap {Vic kigger på det}
