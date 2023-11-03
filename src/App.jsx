@@ -7,7 +7,7 @@ import Planner from './pages/planner'  //TODO: denne laver vi hvis vi har oversk
 
 import User from './pages/user'
 import Booking from './pages/booking'
-import Map from './pages/map'
+//import Map from './pages/map'
 
 import SignUp from './pages/signup'
 import Login from './pages/login'

@@ -24,12 +24,29 @@ import MapsHomeWorkOutlinedIcon from '@mui/icons-material/MapsHomeWorkOutlined';
 import "../styles/rin.css"
 
 import BackBtn from "../components/backbtn";
+<<<<<<< Updated upstream
+import TravelFilter from "../components/imgfilter";
+=======
 //import ComplexCardRating from "../components/cardrating";
+>>>>>>> Stashed changes
 
 export default function Booking() {
     // Hent det aktuelle tema ved hjælp af useTheme hook
     const outerTheme = useTheme();
      // Definér nogle variabler med data, der skal bruges senere
+
+     const images = [
+        {
+          src: {azores},
+          title: 'Image 1',
+          subheader: 'Description 1',
+        },
+        {
+          src: {azores},
+          title: 'Image 2',
+          subheader: 'Description 2',
+        },
+      ];//objekter som skal bruges til filter funktionen
 
     return (
         <ThemeProvider theme={customTheme(outerTheme)}>
@@ -136,7 +153,7 @@ export default function Booking() {
 
 
                 <ComplexCard 
-                image={"../src/assets/pictures/hamburg.jpg"}
+                image={hamburg}
                 title={ "Two day trip to Hamburg"}
                 subheader={"Special tickets to the Elbphilharmonie"}
                 label={"GER"}
@@ -144,7 +161,7 @@ export default function Booking() {
                 />
 
                 <ComplexCard 
-                image={"../src/assets/pictures/kyoto.jpg"}
+                image={kyoto}
                 title={"The Beauty of Kyoto"}
                 subheader={"Experience Japanese Culture"}
                 label={"JPN"}
@@ -153,7 +170,7 @@ export default function Booking() {
 
 
                 <ComplexCard 
-                image={"../src/assets/pictures/london.jpg"}
+                image={london}
                 title={"Discover the Magic of London"}
                 subheader={"Explore Iconic Landmarks"}
                 label={"UK"}
@@ -162,8 +179,12 @@ export default function Booking() {
                 // Her gentages lignende blokke for andre rejsemål (Kyoto og London) med forskellige oplysninger
                 // ComplexCard komponenten bruges til at vise oplysningerne om hvert rejsemål Offers  */}
             </Stack>
+<<<<<<< Updated upstream
+            <Typography variant="h3" m="0 3% " color="text.secondary.accent" >
+=======
 
             <Typography variant="h3" m="0 3%" color="text.secondary.accent" >
+>>>>>>> Stashed changes
                Exclusive Offers!            
             </Typography>
 
@@ -178,13 +199,21 @@ export default function Booking() {
 
                         }}
                     >
-                        <ScrollCards name="New " image={london} /> 
-                        <ScrollCards name="vacation?" image={kyoto} />
+                        <ScrollCards name="New adventure " image={azores} /> 
+                        <ScrollCards name="vacation for you?" image={bhutan} />
                         <ScrollCards name="booking!" image={hamburg} />
                         <ScrollCards name="Incredible" image={london} />
-                        <ScrollCards name="coupon?" image={kyoto} />
+                        <ScrollCards name="Want a coupon?" image={kyoto} />
                         </Stack>
+                        <Typography variant="h3" m="0 3%">
+                            Popular searches
+                        </Typography>
 
+
+                        <TravelFilter></TravelFilter>
+
+
+                
                         <Typography variant="h3" m="0 3%" color="text.secondary.accent" >
                Hot Deals!            
             </Typography>
@@ -204,6 +233,8 @@ export default function Booking() {
                         <ScrollCards name="Incredible" image={london} />
                         <ScrollCards name="coupon?" image={kyoto} />
                         </Stack>
+
+
 
 
 
