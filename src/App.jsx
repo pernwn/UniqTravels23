@@ -23,8 +23,6 @@ import { CssBaseline } from '@mui/material'
 
 function App() {
 
-
-
   //Oprettelse af variabel for at bruge useTheme
   const outerTheme = useTheme();
   return (
@@ -45,7 +43,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/planner" element={<Planner />} /> {/*TODO: evt kan vi kalde denne for inspiration eller community hvor der kun er reviews af steder, appen osv – evt kan man skrive kommentarer til andre brugere? */}
-          <Route path="/map" element={<Map />} />
+          <Route path="/map" element={<Error />} />
           <Route path="/user" element={<User />} />
 
           <Route path="*" element={<Error />} />

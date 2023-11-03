@@ -24,11 +24,7 @@ import MapsHomeWorkOutlinedIcon from '@mui/icons-material/MapsHomeWorkOutlined';
 import "../styles/rin.css"
 
 import BackBtn from "../components/backbtn";
-<<<<<<< Updated upstream
 import TravelFilter from "../components/imgfilter";
-=======
-//import ComplexCardRating from "../components/cardrating";
->>>>>>> Stashed changes
 
 export default function Booking() {
     // Hent det aktuelle tema ved hjælp af useTheme hook
@@ -179,12 +175,8 @@ export default function Booking() {
                 // Her gentages lignende blokke for andre rejsemål (Kyoto og London) med forskellige oplysninger
                 // ComplexCard komponenten bruges til at vise oplysningerne om hvert rejsemål Offers  */}
             </Stack>
-<<<<<<< Updated upstream
-            <Typography variant="h3" m="0 3% " color="text.secondary.accent" >
-=======
 
             <Typography variant="h3" m="0 3%" color="text.secondary.accent" >
->>>>>>> Stashed changes
                Exclusive Offers!            
             </Typography>
 
@@ -233,8 +225,6 @@ export default function Booking() {
                         <ScrollCards name="Incredible" image={london} />
                         <ScrollCards name="coupon?" image={kyoto} />
                         </Stack>
-
-
 
 
 

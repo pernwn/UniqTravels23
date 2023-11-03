@@ -11,7 +11,7 @@ import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
-import IconButton, { IconButtonProps } from '@mui/material/IconButton';
+import IconButton, { /*IconButtonProps*/ } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -20,6 +20,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 import iceland from "../assets/pictures/iceland.jpg";
+import BackBtn from "./backbtn";
+import { useState } from "react";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -35,7 +37,7 @@ const ExpandMore = styled((props) => {
 
 
 export default function Destination(){
-  const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -45,7 +47,7 @@ return(
 <ThemeProvider theme={customTheme(outerTheme)}>
 <CssBaseline enableColorScheme />
   <section className='hPic'>{/* Denne section er stylet magen til den på Homepage for at der er sammenhæng i siden*/}
-  <BackBtn/>
+  <BackBtn />
 
 
 

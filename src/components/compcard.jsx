@@ -19,46 +19,6 @@ export default function ComplexCard(props) {
 
 
     const cardContentStyle = {
-<<<<<<< Updated upstream
-        maxHeight: '200px', // Sætter en maks højde for vores kort
-        overflow: 'hidden', // Gemmer overflow væk
-        textOverflow: 'ellipsis', // Tilføjer en ellipse til overflow
-        
-      };
-return(
-    <Card className="compcard"
-    >
-        <CardHeader
-        avatar={ 
-            <Avatar sx={{bgcolor: "info"}} aria-label="Destination">
-                {props.label} 
-            </Avatar>
-        }
-        action={
-            <IconButton aria-label="settings">
-                <MoreVert />
-
-            </IconButton>
-        }
-            title={props.title}
-            subheader={props.subheader} 
-        />
-        <CardMedia
-          component="img"
-          height="200"
-          image={props.image} 
-        >
-             
-        </CardMedia>
-        <CardContent sx={cardContentStyle}> 
-        {/*Her bruger vi den const der blev defineret i starten 
-           Den sørger for at når kortet har ramt sin max højde så bliver det overskydende tekst skåret fra. 
-           Det sikrer at alle kort står lækkert og ensformigt med minimal forstyrrelse til brugeren  */}
-            <Typography variant="body2" color="text.secondary" 
-            > 
-               {props.body}
-            </Typography>
-=======
         maxHeight: '200px', // Set the max height for the card content
         overflow: 'hidden', // Hide the overflow
         textOverflow: 'ellipsis', // Add ellipsis for the text overflow
@@ -76,7 +36,6 @@ return(
                 action={
                     <IconButton aria-label="settings">
                         <MoreVert />
->>>>>>> Stashed changes
 
                     </IconButton>
                 }
