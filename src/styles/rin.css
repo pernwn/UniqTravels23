@@ -1,26 +1,17 @@
-.hPic{
+.hPic {
     background-image: url("../assets/pictures/bookback.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    position:relative;
+    position: relative;
 
-    height:400px;
+    height: 400px;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
 
 }
 
-html{
-    overflow:auto;
-    position: relative;
-    bottom:50px;
 
-
-    display:flex;
-    flex-direction: column;
-}
-
-.search{
-    display:flex;
+.search {
+    display: flex;
     justify-content: center;
 
     text-align: center;
@@ -29,11 +20,15 @@ html{
     left: 50%;
 }
 
-.compcard{
-width: 300px;
+/*
+.compcard {
+    overflow: auto;
+    width:100%;
 }
+
+/*
 .horizontal-scroll {
 
 width: fit-content;
 
-  }
+  }*/
