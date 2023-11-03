@@ -14,7 +14,7 @@ export default function ComReviews() {
     const [description, setDescription] = useState("");
     const [location, setLocation] = useState("");
     const [rating, setRating] = useState(0);
-    const [date, setDate] = useState(0);
+    const [date] = useState(0);
 
     const [sorting, setSorting] = useState("location")
 

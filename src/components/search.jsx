@@ -16,13 +16,15 @@ import TuneOutlinedIcon from '@mui/icons-material/TuneOutlined';
 
 export default function SearchBar() {
     const outerTheme = useTheme();
+
+    
     return (
         <ThemeProvider theme={customTheme(outerTheme)}>
 
             <Paper
                 component="form"
                 elevation="14"
-                sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 300, opacity:.9 }}
+                sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 300, opacity: .9 }}
             >
 
 
@@ -37,11 +39,11 @@ export default function SearchBar() {
                 </IconButton>
 
                 <Divider sx={{ height: 28, m: 0.2 }} orientation="vertical" />
-                
+
                 <IconButton sx={{ p: '10px' }} label="search filter" /*Denne menu skal laves til filtrerin */>
                     <TuneOutlinedIcon />
                 </IconButton>
-                
+
                 {/*
                 <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
 
@@ -50,7 +52,10 @@ export default function SearchBar() {
                 </IconButton>*/}
             </Paper>
 
+            <Paper className='search-results'>
+                Searchbar results
 
+            </Paper>
 
 
         </ThemeProvider>

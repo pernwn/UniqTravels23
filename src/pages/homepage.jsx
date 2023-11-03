@@ -14,7 +14,7 @@ import SearchBar from '../components/search';
 import "../styles/vic.css"
 import { SplashAnimation, GuyAnimation } from "../components/splash";
 
-
+import Desti from "../components/searchDesti";
 
 //import fra MUI
 import Box from '@mui/material/Box';
@@ -58,7 +58,7 @@ export default function HomePage() {
                 </section>
             </section>
 
-
+                        <Desti/>
 
             <Stack spacing={4} m={"2em 0 8em"}>
                 <Box className='quickTools'
@@ -96,7 +96,7 @@ export default function HomePage() {
                     </Stack>
                 </Box>
 
-
+                        
                 <Stack direction="column">
                     <Typography variant="h4" lineHeight="1" textAlign="center" gutterBottom>Plan your next vacation with us!</Typography>
 
