@@ -182,7 +182,7 @@ export default function Booking() {
 
 
 
-            <Stack direction="row" spacing={1} m="0 0 3%" 
+            <Stack direction="row" spacing={1} p="0 4% 16%" 
                         sx={{
                             overflow: "auto",
                             display: "flex",
@@ -210,7 +210,7 @@ export default function Booking() {
                Hot Deals!            
             </Typography>
 
-            <Stack direction="row" spacing={1}  m="0 0 3%"
+            <Stack direction="row" spacing={1}  p="0 0 16%"
                         sx={{
                             overflow: "auto",
                             display: "flex",
