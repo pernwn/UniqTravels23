@@ -5,15 +5,15 @@
 //import billeder
 //import logoplaceholder from '../assets/pictures/logoplaceholder.png'
 import beach from "../assets/pictures/beachy.jpeg"
-import video from "../assets/NFP2.mp4"
+//import video from "../assets/NFP2.mp4"
 import trust from "../assets/trustpilot.png"
 
 //import andre komponenter
 import { QuickTools, ScrollCards } from '../components/cards';
 import SearchBar from '../components/search';
 import "../styles/vic.css"
-import { SplashAnimation } from "../components/splash";
-//import SplashAnimation from "../components/splash";
+import { SplashAnimation, GuyAnimation } from "../components/splash";
+
 
 
 //import fra MUI
@@ -100,7 +100,7 @@ export default function HomePage() {
                 <Stack direction="column">
                     <Typography variant="h4" lineHeight="1" textAlign="center" gutterBottom>Plan your next vacation with us!</Typography>
 
-                    <video src={video} width="100%" height="auto" controls preload="none" /*TODO: udskift video*/ />
+                        <GuyAnimation/>
 
                     <Stack direction="row" spacing={4}
                         sx={{
@@ -145,7 +145,11 @@ export default function HomePage() {
     );
 }
 
-/*                            <Typography variant="h4">
+/*                            
+
+                    <video src={video} width="100%" height="auto" controls preload="none" /*TODO: udskift video />
+
+<Typography variant="h4">
                                 <Divider textAlign="center">Simple!</Divider>
                                 <Divider textAlign="center">Fast!</Divider>
                                 <Divider textAlign="center">Easy!</Divider>
