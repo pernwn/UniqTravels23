@@ -29,24 +29,25 @@ import TravelFilter from "../components/imgfilter";
 export default function Booking() {
     // Hent det aktuelle tema ved hjælp af useTheme hook
     const outerTheme = useTheme();
-     // Definér nogle variabler med data, der skal bruges senere
+    // Definér nogle variabler med data, der skal bruges senere
 
-     const images = [
+    const images = [
         {
-          src: {azores},
-          title: 'Image 1',
-          subheader: 'Description 1',
+            src: { azores },
+            title: 'Image 1',
+            subheader: 'Description 1',
         },
         {
-          src: {azores},
-          title: 'Image 2',
-          subheader: 'Description 2',
+            src: { azores },
+            title: 'Image 2',
+            subheader: 'Description 2',
         },
-      ];//objekter som skal bruges til filter funktionen
+    ];//objekter som skal bruges til filter funktionen
 
     return (
+        <>
         <ThemeProvider theme={customTheme(outerTheme)}>
-            <CssBaseline enableColorScheme />
+<CssBaseline enableColorScheme />
             <section className='hPic'>{/* Denne section er stylet magen til den på Homepage for at der er sammenhæng i siden*/}
             <section className='search'>
                     <Box 
@@ -67,7 +68,7 @@ export default function Booking() {
                 </section>
             </section>
 
-{/* sx tilpasser stil for stack så det er horisontalt og tilføjer en rullebjælke så man kan scrolle over komponenterne*/}
+   {/* sx tilpasser stil for stack så det er horisontalt og tilføjer en rullebjælke så man kan scrolle over komponenterne*/}
             <section className='quickTools'>
                         <BackBtn/>
             <Stack spacing={4} m={"2em 0 4em"}>
@@ -87,12 +88,12 @@ export default function Booking() {
             </section>
             <Typography variant="h2" m="0 3%">Flights</Typography>
 
-            <Stack direction="row" spacing={2} p="0 4% 16%"
+            <Stack direction="row" spacing={2} p="0 4% 20%"
           
                     sx={{
                     overflow: "auto",
+
                 
-        
                     }}
             >
                 {/* ComplexCard er importeret som en komponent og bliver indsat ved at kalde den her
@@ -175,9 +176,8 @@ export default function Booking() {
                 // Her gentages lignende blokke for andre rejsemål (Kyoto og London) med forskellige oplysninger
                 // ComplexCard komponenten bruges til at vise oplysningerne om hvert rejsemål Offers  */}
             </Stack>
-
-            <Typography variant="h3" m="0 3%" color="text.secondary.accent" >
-               Exclusive Offers!            
+            <Typography variant="h3" m="0 3% " >
+               Exclusive Offers!  &#10024;           
             </Typography>
 
 
@@ -187,7 +187,8 @@ export default function Booking() {
                             overflow: "auto",
                             display: "flex",
                             flexDirection: "row",
-                            justifyContent: "space-evenly"
+                            justifyContent: "space-evenly",
+                            p: "0 3% 3%",
 
                         }}
                     >
@@ -197,6 +198,7 @@ export default function Booking() {
                         <ScrollCards name="Incredible" image={london} />
                         <ScrollCards name="Want a coupon?" image={kyoto} />
                         </Stack>
+  
                         <Typography variant="h3" m="0 3%">
                             Popular searches
                         </Typography>
@@ -227,8 +229,13 @@ export default function Booking() {
                         </Stack>
 
 
+        </ThemeProvider>
+            
 
-        </ThemeProvider>   
+            
 
-    );
-}
+
+    
+                        </>
+
+)}

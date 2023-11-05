@@ -19,30 +19,45 @@ export default function ComplexCard(props) {
 
 
     const cardContentStyle = {
-        maxHeight: '200px', // Set the max height for the card content
-        overflow: 'hidden', // Hide the overflow
-        textOverflow: 'ellipsis', // Add ellipsis for the text overflow
+        maxHeight: '200px', // Sætter en maks højde for vores kort
+        overflow: 'hidden', // Gemmer overflow væk
+        textOverflow: 'ellipsis', // Tilføjer en ellipse til overflow
+        
+      };
+return(
+    <Stack direction="row">
+    <Card className="compcard"
+    >
+        <CardHeader
+        avatar={ 
+            <Avatar sx={{bgcolor: "info"}} aria-label="Destination">
+                {props.label} 
+            </Avatar>
+        }
+        action={
+            <IconButton aria-label="settings">
+                <MoreVert />
 
-    };
-    return (
-        <Stack /* Card sat i stack for at kunne scroll  */>
-        <Card elevation={4} sx={{ width: 300, maxHeight:500 /* Denne ændres på bredde og højde af kort */ }}> 
-            <CardHeader
-                avatar={
-                    <Avatar sx={{ bgcolor: "info" }} aria-label="Destination">
-                        {props.label}
-                    </Avatar>
-                }
-                action={
-                    <IconButton aria-label="settings">
-                        <MoreVert />
-
-                    </IconButton>
-                }
-
-                title={props.title}
-                subheader={props.subheader}
-            />
+            </IconButton>
+        }
+            title={props.title}
+            subheader={props.subheader} 
+        />
+        <CardMedia
+          component="img"
+          height="200"
+          image={props.image} 
+        >
+             
+        </CardMedia>
+        <CardContent sx={cardContentStyle}> 
+        {/*Her bruger vi den const der blev defineret i starten 
+           Den sørger for at når kortet har ramt sin max højde så bliver det overskydende tekst skåret fra. 
+           Det sikrer at alle kort står lækkert og ensformigt med minimal forstyrrelse til brugeren  */}
+            <Typography variant="body2" color="text.secondary" 
+            > 
+               {props.body}
+            </Typography>
 
             <CardMedia
                 component="img"
@@ -51,12 +66,6 @@ export default function ComplexCard(props) {
             >
 
             </CardMedia>
-            <CardContent sx={cardContentStyle}>
-                <Typography variant="body2" color="text.secondary" //Jeg vil gerne få den her til at klappe sig lidt sammen så man kun kan se starten af teksten, kigger på det senere
-                >
-                    {props.body}
-                </Typography>
-
             </CardContent>
             <CardActions disableSpacing>
                 <IconButton aria-label="add to favorites">
@@ -68,8 +77,6 @@ export default function ComplexCard(props) {
                 <NavLink to="/destination" sx={{ fontSize: 35 }}>Read More</NavLink>
             </CardActions>
         </Card>
-    </Stack>
-
-
+</Stack>
     )
 }
