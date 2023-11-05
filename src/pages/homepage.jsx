@@ -61,6 +61,7 @@ export default function HomePage() {
 
             <Desti />
 
+                        
             <Stack spacing={8} m={"2em 0 12em"}>
                 <Box className='quickTools'
                     sx={{
@@ -69,7 +70,7 @@ export default function HomePage() {
                         justifyContent: "space-evenly",
 
                     }}
-                >
+                > {/* Her anvendes componenten "cards" hvor vi har lavet flere funktioner så man kan bruge props, så vi kan genbruge koden */}
                     <QuickTools name="Travel options" icon={<FmdGoodOutlinedIcon sx={{ fontSize: 40, marginBottom: "16%" }} />} />
                     <QuickTools name="Housing options" icon={<MapsHomeWorkOutlinedIcon sx={{ fontSize: 40, marginBottom: "16%" }} />} />
                     <QuickTools name="Transport options" icon={<CarRentalIcon sx={{ fontSize: 40, marginBottom: "16%" }} />} />
@@ -121,18 +122,27 @@ export default function HomePage() {
                         <Typography variant="h5">Easy!</Typography>
 
 
-
-
                     </Stack>
 
                     {/* Her vil være en masse billeder der auto scroller, billeder af byer, landskab, strande, ferie steder etc */ }
-                    <Typography>Be inspired!</Typography>
-                    <Stack direction="row" spacing={4}
+                    <Typography variant="h5" lineHeight="1" textAlign="center" gutterBottom>Get inspired</Typography>
+                    <Stack direction="row" spacing={2}
                         sx={{
                             p: "0 3% 3%",
                             overflow: "auto",
+                
                         }}
                     >
+
+                        <QuickTools />
+                        <QuickTools/>
+                        <QuickTools/>
+                        <QuickTools/>
+                        <QuickTools/>
+                        <QuickTools/>
+                        <QuickTools/>
+                        <QuickTools/>
+                        <QuickTools/>
                         <div><img src="" alt="" /></div>
 
                         <div><img src="" alt="" /></div>
@@ -164,11 +174,9 @@ export default function HomePage() {
                 <Box
                     sx={{
                         backgroundColor: customTheme => customTheme.palette.background.paper,
-
+                        p:4
                     }}
                 >
-
-
 
                     <div className="trust">
                         <img src={trust} alt="Trust us! :D" width="200" />
