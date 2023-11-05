@@ -26,6 +26,7 @@ export function QuickTools(props) {
                     >
                         {props.icon}
                         {props.name}
+                        {props.image}
 
                     </CardContent>
 
@@ -97,3 +98,4 @@ export function MainBtn(props){
 
     )
 }
+

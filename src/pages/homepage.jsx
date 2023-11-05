@@ -12,7 +12,7 @@ import trust from "../assets/trustpilot.png"
 import { QuickTools, ScrollCards } from '../components/cards';
 import SearchBar from '../components/search';
 import "../styles/vic.css"
-import { SplashAnimation, GuyAnimation } from "../components/splash";
+import { /*SplashAnimation, GuyAnimation,*/ TravelAnimation } from "../components/splash";
 
 import Desti from "../components/searchDesti";
 
@@ -23,6 +23,7 @@ import { Stack, Typography } from '@mui/material';
 import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
 import MapsHomeWorkOutlinedIcon from '@mui/icons-material/MapsHomeWorkOutlined';
 import CarRentalIcon from '@mui/icons-material/CarRental';
+import Trustpilot from "../components/trustpilot";
 
 //import ComReviews from "../components/reviews";
 
@@ -34,7 +35,7 @@ import CarRentalIcon from '@mui/icons-material/CarRental';
 
 
 export default function HomePage() {
-   
+
 
     // TODO: ???????????????????????? const greet = newUser ? "Welcome, new traveler!" : "Welcome back, traveler!"
     return (
@@ -58,9 +59,9 @@ export default function HomePage() {
                 </section>
             </section>
 
-                        <Desti/>
+            <Desti />
 
-            <Stack spacing={4} m={"2em 0 8em"}>
+            <Stack spacing={8} m={"2em 0 12em"}>
                 <Box className='quickTools'
                     sx={{
                         display: "flex",
@@ -86,21 +87,20 @@ export default function HomePage() {
                             overflow: "auto",
                         }}
                     >
-                        <ScrollCards name="New offers" image={beach} /> {/*Billeder virker ikke ordentligt med props, forsøger at fikse */}
+                        <ScrollCards name="New offers" image={beach} />
                         <ScrollCards name="Your next vacation?" image={beach} />
                         <ScrollCards name="Get 20% off on next booking!" image={beach} />
-                        <ScrollCards name="Incredible croissants" image={beach} />
                         <ScrollCards name="Got a coupon?" image={beach} />
 
 
                     </Stack>
                 </Box>
 
-                        
+
                 <Stack direction="column">
                     <Typography variant="h4" lineHeight="1" textAlign="center" gutterBottom>Plan your next vacation with us!</Typography>
 
-                        <GuyAnimation/>
+                    <TravelAnimation />
 
                     <Stack direction="row" spacing={4}
                         sx={{
@@ -120,23 +120,65 @@ export default function HomePage() {
 
                         <Typography variant="h5">Easy!</Typography>
 
+
+
+
+                    </Stack>
+
+                    {/* Her vil være en masse billeder der auto scroller, billeder af byer, landskab, strande, ferie steder etc */ }
+                    <Typography>Be inspired!</Typography>
+                    <Stack direction="row" spacing={4}
+                        sx={{
+                            p: "0 3% 3%",
+                            overflow: "auto",
+                        }}
+                    >
+                        <div><img src="" alt="" /></div>
+
+                        <div><img src="" alt="" /></div>
+
+                        <div><img src="" alt="" /></div>
+
+                        <div><img src="" alt="" /></div>
+
+                        <div><img src="" alt="" /></div>
+
+                        <div><img src="" alt="" /></div>
+
+                        <div><img src="" alt="" /></div>
+
+                        <div><img src="" alt="" /></div>
+
+                        <div><img src="" alt="" /></div>
+
+                        <div><img src="" alt="" /></div>
+
+                        <div><img src="" alt="" /></div>
+
+                        <div><img src="" alt="" /></div>
+
                     </Stack>
 
                 </Stack>
-    
+
                 <Box
                     sx={{
                         backgroundColor: customTheme => customTheme.palette.background.paper,
-                        p: 2
+
                     }}
                 >
-                    <SplashAnimation />
+
+
+
+                    <div className="trust">
+                        <img src={trust} alt="Trust us! :D" width="200" />
+                    </div>
+
+                    <Trustpilot />
                     {/*<ComReviews />*/}
                 </Box>
 
-                <div className="trust">
-                    <img src={trust} alt="Trust us! :D" width="100" />
-                </div>
+
 
 
             </Stack>
