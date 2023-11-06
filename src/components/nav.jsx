@@ -8,13 +8,12 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import AirplaneTicketOutlinedIcon from '@mui/icons-material/AirplaneTicketOutlined';
 import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
-//import EventOutlinedIcon from '@mui/icons-material/EventOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import PeopleOutlinedIcon from '@mui/icons-material/PeopleOutlined';
 
 
 
-//NavLink bruges som komponent inde i BottomNavigationActions for at henvise til en anden side når man trykker ??
+//NavLink bruges som komponent inde i BottomNavigationActions for at henvise til en anden side når man trykker
 import { NavLink } from 'react-router-dom';
 
 //importerer useLocation til at få information om den nuværende lokation – denne bruges til at bestemme active state
