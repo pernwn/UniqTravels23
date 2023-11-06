@@ -1,5 +1,5 @@
 //HUSK AT SKRIVE KOMMENTARER TIL NÆRMEST ALT – forklaring samt hvad koden gør
-
+//lavet af Rina
 // Importér nødvendige moduler og komponenter
 import hamburg from "../assets/pictures/hamburg.jpg"
 import kyoto from "../assets/pictures/kyoto.jpg"

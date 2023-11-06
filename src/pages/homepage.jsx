@@ -1,6 +1,6 @@
-//HUSK AT SKRIVE KOMMENTARER TIL NÆRMEST ALT – forklaring samt hvad koden gør
-
 //{Kodet af: Victoria}
+
+
 
 //import billeder
 //import logoplaceholder from '../assets/pictures/logoplaceholder.png'

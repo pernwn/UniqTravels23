@@ -1,4 +1,4 @@
-//ny nav
+//{Kodet af: Victoria ved brug af MUI library og tilpasset til vores app}
 
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
@@ -23,7 +23,7 @@ import { useState } from 'react';
 
 
 
-//{Kodet af Victoria ved brug af MUI library og tilpasset til vores app}
+
 
 //TODO: skal lige have skrevet kommentarer til ddet her
 export default function Nav() {

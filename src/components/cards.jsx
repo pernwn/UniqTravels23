@@ -1,3 +1,6 @@
+//{Kodet af: Victoria}
+
+
 import { Button, Card, CardActionArea, CardContent, CardMedia, Stack, Typography } from "@mui/material";
 import { NavLink } from "react-router-dom";
 
