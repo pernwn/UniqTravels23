@@ -58,7 +58,6 @@ export default function Trustpilot() {
                                 <Typography variant="body2">{item.description}</Typography>
                                 <Rating
                                     sx={{color:"#00b67a"}}
-
                                     value={item.rating}
                                 />
 

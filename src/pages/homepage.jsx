@@ -45,7 +45,7 @@ import hike11 from "../assets/vacation_places_gallery/hike11.jpg"
 
 
 //import andre komponenter
-import { MainBtn, QuickTools, ScrollCards, AutoScroll, SecndBtn } from '../components/cards';
+import { QuickTools, ScrollCards, AutoScroll, SecndBtn } from '../components/cards';
 import SearchBar from '../components/search';
 import "../styles/vic.css"
 import { /*SplashAnimation, GuyAnimation,*/ TravelAnimation } from "../components/splash";
@@ -62,16 +62,21 @@ import CarRentalIcon from '@mui/icons-material/CarRental';
 import Trustpilot from "../components/trustpilot";
 
 
-
+//import af separat theme file
+import { customTheme } from '../themes/themes'
+import { useTheme } from '@mui/material/styles';
+import { ThemeProvider } from '@emotion/react'
+import { CssBaseline } from '@mui/material'
 
 
 
 export default function HomePage() {
-
+    const outerTheme = useTheme();
 
     // TODO: ???????????????????????? const greet = newUser ? "Welcome, new traveler!" : "Welcome back, traveler!"
     return (
-        <>
+        <ThemeProvider theme={customTheme(outerTheme)}>
+            <CssBaseline enableColorScheme />
             <section className='hPic'>
                 <section className='search'>
                     <Box /* Bruger box komponenten fra MUI i stedet for div/section etc, for at være i stand til at style med CSS fra MUI systemet*/
@@ -134,7 +139,7 @@ export default function HomePage() {
 
 
                 <Stack direction="column" alignItems="center">
-                    <Typography variant="h4" lineHeight="1" textAlign="center" gutterBottom p="0 3% 3%" >We'll help plan your perfect dream adventure</Typography>
+                    <Typography variant="h4" lineHeight="1" textAlign="center" gutterBottom p="0 3% 3%" >We&apos;ll help plan your perfect dream adventure</Typography>
 
                     <TravelAnimation />
 
@@ -182,16 +187,22 @@ export default function HomePage() {
                         }}
                     > {/* TODO: BILLEDERNE SKAL ÆNDRES SÅ DET PASSER TIL TITLEN. TODO: TILFØJ FAV/SAVE FUNKTION. TODO: tilføj share, like, save, whatever ikoner*/}
                         
+                      
                         <AutoScroll title="Scenic Landscape" description="A tapestry of nature's beauty unfurls before you. Each step is a dance with adventure, as you chase the mysteries lurking beyond the horizon. The golden sunlight bathes the land in a warm embrace, arising from the ashes of solitude, only to meet its demise in the tranquil waters." image={beach1} />
                         <AutoScroll title="Beach Paradise" description="The beach is a slice of heaven where the sand meets the sea. Crystal-clear waves whisper secrets to the shore, and the azure sky cradles your dreams. It's a place where seagulls write poems in the sands, and every footprint tells a story of the tides." image={beach2} />
                         <AutoScroll title="Coastal Wonderland" description="On this coastal journey, nature paints a masterpiece of adventure. The cliffs reach for the sky, and the waves crash in rhythmic applause. The sea breeze carries tales of distant lands, as you explore the hidden coves and embrace the thrill of discovery." image={beach3} />
                         <AutoScroll title="Beach Bliss" description="A world of serenity awaits on the beach, where the sands hold the warmth of the sun's embrace. It's a realm of quietude, where footprints mark moments in time, and the horizon beckons with promises of limitless wonder." image={beach4} />
                         <AutoScroll title="Lush Oasis" description="This lush oasis is a haven of green, where vibrant foliage dances with the breeze. The scent of blooming flowers fills the air, and the rivers murmur secrets to the trees. It's a place where nature's artistry is on full display, inviting you to explore its intricate beauty." image={beach5} />
+    
+
+                     
                         <AutoScroll title="Shoreline Symphony" description="The shoreline is a symphony of waves and wonder. As the tides serenade the sands, seashells reveal their treasures, and the lighthouse stands sentinel over the vast expanse. It's a place where the song of the sea never ceases, and every sunrise brings a new verse." image={beach6} />
                         <AutoScroll title="Secluded Paradise" description="This secluded paradise is a secret haven, where hidden beaches invite exploration. The emerald waters meet the golden sands in perfect harmony, and the cliffs hold untold stories of the sea. It's a place where solitude and beauty become your closest companions." image={beach7} />
                         <AutoScroll title="Beachfront Elegance" description="The beachfront exudes elegance and charm. The palm trees sway to an invisible melody, and the waves greet the shore with grace. It's a realm of sophistication where the sunsets are a nightly masterpiece, and the sands are a luxurious sanctuary for your wanderlust." image={beach8} />
                         <AutoScroll title="Mountain Retreat" description="The mountain retreat is a sanctuary of serenity. Towering peaks kiss the sky, and the lush valleys beckon with their embrace. It's a place where the air is pure, and the echoes of nature's secrets resound in every rustling leaf." image={beach9} />
                         <AutoScroll title="Island Paradise" description="In this island paradise, turquoise waters caress the shores, and swaying palms create a canopy of tranquility. The gentle waves invite you to explore their mysteries, and the sunsets cast a warm glow over the sands, painting a picture of serene bliss." image={beach10} />
+
+
 
 
                     </Stack>
@@ -282,7 +293,7 @@ export default function HomePage() {
 
             </Stack>
 
-        </>
+        </ThemeProvider>
     );
 }
 
