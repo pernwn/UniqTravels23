@@ -121,3 +121,10 @@ html {
   justify-content: center;
 
 }
+
+.inspo{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}

@@ -6,6 +6,8 @@ import { NavLink } from "react-router-dom";
 
 
 
+
+
 //Kort komponent som genbruges på flere sider vha props
 export function QuickTools(props) {
     return (
@@ -29,7 +31,6 @@ export function QuickTools(props) {
                     >
                         {props.icon}
                         {props.name}
-            
 
                     </CardContent>
 
@@ -45,12 +46,12 @@ export function ScrollCards(props) {
     return (
 
         <Stack direction="row">
-            <Card elevation={4} sx={{ maxWidth: 150 }}>
+            <Card elevation={4} >
 
                 <CardActionArea>
                     <CardMedia className="dealsPic"
                         component="img"
-                        image={props.image} 
+                        image={props.image}
                         sx={{
                             height: 100,
                         }}
@@ -63,15 +64,16 @@ export function ScrollCards(props) {
                             flexDirection: "column",
                             alignItems: "center",
                             justifyContent: "space-evenly",
-                            textAlign:"center",
+                            textAlign: "center",
 
-                            width: 150,
-                            height: 70,
-                            
+                            width: 240,
+                            height: "100%",
+                            p: 2,
+
                         }}
                     >
 
-                        <Typography gutterBottom variant="body1" component="div" lineHeight="1.15">
+                        <Typography gutterBottom variant="body2" component="div" lineHeight="1.15">
                             {props.name}
                         </Typography>
                     </CardContent>
@@ -83,21 +85,56 @@ export function ScrollCards(props) {
     )
 }
 
-export function MainBtn(props){
-    return(
-            <Button variant="filled"
-                component={NavLink}
-                to={props.page}
-           
+export function AutoScroll(props) {
+    return (
+//for-loop ?
+   
+            <CardActionArea>
+
+            <Card elevation={4}
                 sx={{
-                    color: customTheme => customTheme.palette.background.paper,
-                    backgroundColor: customTheme => customTheme.palette.secondary.main,
-                    width:"80%"
+                    height: "100%",
                 }}
             >
-                <Typography variant="button">{props.name}</Typography>
-            </Button>
-  
+                <CardContent>
+                    <CardMedia
+                        component="img"
+                        image={props.image}
+                        sx={{
+                            height: 200,
+                            minWidth: 300,
+                            borderRadius: "4%",
+                            marginBottom: 1.5
+
+                        }}
+                    ></CardMedia>
+                    <Typography variant="body1">{props.title}</Typography>
+                    <Typography variant="body2">{props.description}</Typography>
+                </CardContent>
+            </Card>
+            </CardActionArea>
+
+    )
+}
+
+
+
+export function MainBtn(props) {
+    return (
+        <Button variant="filled"
+            component={NavLink}
+            to={props.page}
+
+            sx={{
+                color: customTheme => customTheme.palette.background.paper,
+                backgroundColor: customTheme => customTheme.palette.secondary.main,
+                width: "80%",
+
+            }}
+        >
+            <Typography variant="button">{props.name}</Typography>
+        </Button>
+
 
     )
 }
