@@ -25,6 +25,10 @@ import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 import AirplaneTicketOutlinedIcon from '@mui/icons-material/AirplaneTicketOutlined';
 import PhotoCameraFrontOutlinedIcon from '@mui/icons-material/PhotoCameraFrontOutlined';
+import RateReviewOutlinedIcon from '@mui/icons-material/RateReviewOutlined';
+import EmojiEventsOutlinedIcon from '@mui/icons-material/EmojiEventsOutlined';
+import MilitaryTechOutlinedIcon from '@mui/icons-material/MilitaryTechOutlined';
+import ExtensionOutlinedIcon from '@mui/icons-material/ExtensionOutlined';
 
 import { QuickTools } from "../components/cards";
 
@@ -36,7 +40,7 @@ export default function User() {
 
             <div className="header">
                 <BackBtn/>
-                <Typography variant="subtitle1" className="h_txt">Traveler Profile</Typography>
+                <Typography variant="h5" className="h_txt">Traveler Profile</Typography>
                 <SettingsOutlinedIcon
                             sx={{
                                 position:"fixed",
@@ -62,11 +66,8 @@ export default function User() {
 
                     <UserHead />
                     <img src={logoplaceholder} alt="placeholder" style={{ width: "5em" }} />
-                    <NavLink to='/login'>login</NavLink>
+                    <NavLink to='/login'>Login</NavLink>
                 </section>
-
-            </section>
-
             <Box
                     sx={{ color: customTheme => customTheme.palette.secondary.main }}
                 >
@@ -78,16 +79,34 @@ export default function User() {
                         }}
                     >
 
-                        
                     <QuickTools name="Documents" icon={<ArticleOutlinedIcon sx={{ fontSize: 40 }} />} />
                     <QuickTools name="Tickets" icon={<AirplaneTicketOutlinedIcon sx={{ fontSize: 40 }} />} />
                     <QuickTools name="Passport" icon={<PhotoCameraFrontOutlinedIcon sx={{ fontSize: 40 }} />} />
+                    <QuickTools name="Reviews" icon={<RateReviewOutlinedIcon sx={{ fontSize: 40 }} />} />
 
+                    </Stack>
+                </Box>
+                <Box
+                    sx={{ color: customTheme => customTheme.palette.secondary.main }}
+                >
+                    <Typography variant='h4' m="0 3%"> My Artie Progression &#10024;</Typography>
+                    <Stack direction="row" spacing={2}  /*Stack komponenten fra MUI er brugt her for at sætte elementerne horisontalt – opdagede denne måde, efter jeg havde brugt flex og flexdirection andre steder */
+                        sx={{
+                            p: "0 3% 3%",
+                            overflow: "auto",
+                        }}
+                    >
 
+                    <QuickTools name="Rewards" icon={<EmojiEventsOutlinedIcon sx={{ fontSize: 40 }} />} />
+                    <QuickTools name="Leaderboard" icon={<MilitaryTechOutlinedIcon sx={{ fontSize: 40 }} />} />
+                    <QuickTools name="Challenges" icon={<ExtensionOutlinedIcon sx={{ fontSize: 40 }} />} />
 
 
                     </Stack>
                 </Box>
+
+            </section>
+
 
 
 

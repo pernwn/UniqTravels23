@@ -9,7 +9,7 @@ import { Button, ThemeProvider, Typography, TextField, Box, /*Grid*/ } from "@mu
 import { useState } from "react";
 //import { Link } from 'react-router-dom';
 
-
+import '../styles/vic.css'
 
 export default function Login() {
   // Bruger React's 'useTheme' hook til at hente det aktuelle tema
@@ -42,13 +42,13 @@ export default function Login() {
   return (
     // Anvender det brugerdefinerede tema på komponenten
     <ThemeProvider theme={customTheme(outerTheme)}>
-      <Box
+      <Box 
         sx={{
           marginTop: 20,
         }}
       >
 
-        <div>
+        <div className='body'>
           <Typography variant="h2">Login</Typography>
 
           {/* Inputfelt for email med en onChange-handler, der opdaterer email-tilstanden */}

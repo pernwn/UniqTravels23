@@ -31,18 +31,7 @@ export default function Booking() {
     const outerTheme = useTheme();
     // Definér nogle variabler med data, der skal bruges senere
 
-    const images = [
-        {
-            src: { azores },
-            title: 'Image 1',
-            subheader: 'Description 1',
-        },
-        {
-            src: { azores },
-            title: 'Image 2',
-            subheader: 'Description 2',
-        },
-    ];//objekter som skal bruges til filter funktionen
+
 
     return (
         <>
@@ -187,7 +176,6 @@ export default function Booking() {
                             overflow: "auto",
                             display: "flex",
                             flexDirection: "row",
-                            justifyContent: "space-evenly",
                             p: "0 3% 3%",
 
                         }}
@@ -212,12 +200,11 @@ export default function Booking() {
                Hot Deals!            
             </Typography>
 
-            <Stack direction="row" spacing={1}  p="0 0 16%"
+            <Stack direction="row" spacing={1}  p="0 0 16%" m="0 3%"
                         sx={{
                             overflow: "auto",
                             display: "flex",
                             flexDirection: "row",
-                            justifyContent: "space-evenly"
 
                         }}
                     >

@@ -78,7 +78,7 @@ const TravelFilter = () => {
   return (
     <ThemeProvider theme={customTheme(outerTheme)} >
       <CssBaseline enableColorScheme />
-      <FormControl sx={{ m: 3, width: 300, marginLeft:10 }}>
+      <FormControl sx={{ m: 3, width: 300 }}>
         <InputLabel id="category-label">Select Travel Category</InputLabel>
         <Select
           labelId="category-label"
