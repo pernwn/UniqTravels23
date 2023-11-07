@@ -139,3 +139,24 @@ export function MainBtn(props) {
     )
 }
 
+export function SecndBtn(props){
+    return (
+        <Button variant="filled"
+            component={NavLink}
+            to={props.page}
+
+            sx={{
+                color: customTheme => customTheme.palette.secondary.main,
+                backgroundColor: "transparent",
+                border:"2px solid",
+                width: "80%",
+
+            }}
+        >
+            <Typography variant="button">{props.name}</Typography>
+        </Button>
+
+
+    )
+}
+

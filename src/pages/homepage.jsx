@@ -45,7 +45,7 @@ import hike11 from "../assets/vacation_places_gallery/hike11.jpg"
 
 
 //import andre komponenter
-import { MainBtn, QuickTools, ScrollCards, AutoScroll } from '../components/cards';
+import { MainBtn, QuickTools, ScrollCards, AutoScroll, SecndBtn } from '../components/cards';
 import SearchBar from '../components/search';
 import "../styles/vic.css"
 import { /*SplashAnimation, GuyAnimation,*/ TravelAnimation } from "../components/splash";
@@ -160,7 +160,7 @@ export default function HomePage() {
 
 
 
-                    <MainBtn name="Book now" page="/booking" />
+                    <SecndBtn name="Book now" page="/booking" />
 
 
 
@@ -179,7 +179,7 @@ export default function HomePage() {
                             overflow: "auto",
                             
                         }}
-                    > {/* TODO: BILLEDERNE SKAL ÆNDRES SÅ DET PASSER TIL TITLEN. TODO: TILFØJ FAV/SAVE FUNKTION*/}
+                    > {/* TODO: BILLEDERNE SKAL ÆNDRES SÅ DET PASSER TIL TITLEN. TODO: TILFØJ FAV/SAVE FUNKTION. TODO: tilføj share, like, save, whatever ikoner*/}
                         
                         <AutoScroll title="Scenic Landscape" description="A tapestry of nature's beauty unfurls before you. Each step is a dance with adventure, as you chase the mysteries lurking beyond the horizon. The golden sunlight bathes the land in a warm embrace, arising from the ashes of solitude, only to meet its demise in the tranquil waters." image={beach1} />
                         <AutoScroll title="Beach Paradise" description="The beach is a slice of heaven where the sand meets the sea. Crystal-clear waves whisper secrets to the shore, and the azure sky cradles your dreams. It's a place where seagulls write poems in the sands, and every footprint tells a story of the tides." image={beach2} />
@@ -202,7 +202,7 @@ export default function HomePage() {
                             overflow: "auto",
                             
                         }}
-                    > {/* TODO: BILLEDERNE SKAL ÆNDRES SÅ DET PASSER TIL TITLEN. TODO: TILFØJ FAV/SAVE FUNKTION*/}
+                    > {/* TODO: BILLEDERNE SKAL ÆNDRES SÅ DET PASSER TIL TITLEN. TODO: TILFØJ FAV/SAVE FUNKTION. TODO: tilføj share, like, save, whatever ikoner*/}
                         <AutoScroll title="Whispering Shadows" description="In a city where shadows gossip and secrets are traded like currency, you'll need more than just an umbrella to shield yourself from their chatter. Welcome to a realm where the dark alleys murmur your name, and you might just overhear your own thoughts in the laughter of the night." image={building1} />
                         <AutoScroll title="Cosmic Web" description="Welcome to a city that's not just on the map but also a celestial crossroads. The streets are constellations, and the buildings are galaxies, all connected by a web of stardust. Here, you're both the traveler and the astronaut of your cosmic journey." image={building2} />
                         <AutoScroll title="Urban Symphony" description="Here, the cacophony of city life orchestrates a symphony of chaos and charm. Be prepared to conduct your own movement, as traffic lights become batons, and street performers compose sonatas in the language of urban rhythm." image={building4} />
@@ -224,7 +224,7 @@ export default function HomePage() {
                             overflow: "auto",
                             
                         }}
-                    > {/* TODO: BILLEDERNE SKAL ÆNDRES SÅ DET PASSER TIL TITLEN. TODO: TILFØJ FAV/SAVE FUNKTION*/}
+                    > {/* TODO: BILLEDERNE SKAL ÆNDRES SÅ DET PASSER TIL TITLEN. TODO: TILFØJ FAV/SAVE FUNKTION. TODO: tilføj share, like, save, whatever ikoner*/}
                         <AutoScroll title="Nomadic Tapestry" description="In this culture, traditions are woven like threads into a nomadic tapestry. Each step is a stitch in this grand design, and even the yurts have tales to share." image={hike1} />
                         <AutoScroll title="City of contradictions" description="In this culture, cities are kaleidoscopes of contrast, where ancient temples stand next to futuristic skyscrapers, and street vendors sell both traditional delicacies and high-tech gadgets. It's a place where history and the future share a cup of tea." image={hike2} />
                         <AutoScroll title="Frozen Fables" description="In this culture, the icy tundras are repositories of frozen fables, where the Northern Lights illuminate the pages of history. Even the glaciers have stories etched in their frozen hearts, waiting for a thaw to share their secrets." image={hike3} />
@@ -245,7 +245,7 @@ export default function HomePage() {
                             overflow: "auto",
                             
                         }}
-                    > {/* TODO: BILLEDERNE SKAL ÆNDRES SÅ DET PASSER TIL TITLEN. TODO: TILFØJ FAV/SAVE FUNKTION*/}
+                    > {/* TODO: BILLEDERNE SKAL ÆNDRES SÅ DET PASSER TIL TITLEN. TODO: TILFØJ FAV/SAVE FUNKTION. TODO: tilføj share, like, save, whatever ikoner*/}
                         <AutoScroll title="Budget Explorer" description="Become a budget explorer and discover the world without breaking the bank. From hidden hostels to street food feasts, your journey is a testament to the art of frugal adventure." image={beach1} />
                         <AutoScroll title="Thrifty Globetrotter" description="As a thrifty globetrotter, you'll unravel the beauty of diverse lands without emptying your wallet. Your travel tales are a testament to the savvy secrets of seeing the world on a shoestring." image={beach} />
                         <AutoScroll title="Economical Wanderer" description="An economical wanderer, you master the art of stretching your travel budget. Your passport tells the story of resourceful journeys, where experiences are rich, and expenses are light." image={beach1} />
