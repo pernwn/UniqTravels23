@@ -102,7 +102,7 @@ export function AutoScroll(props) {
                         image={props.image}
                         sx={{
                             height: 200,
-                            minWidth: 300,
+                            minWidth: 290,
                             borderRadius: "4%",
                             marginBottom: 1.5
 

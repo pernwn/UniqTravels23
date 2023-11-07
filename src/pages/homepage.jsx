@@ -84,7 +84,7 @@ export default function HomePage() {
                             top: 80
                         }}
                     >
-                        <Typography variant="h2" sx={{ color: customTheme => customTheme.palette.background.paper, lineHeight: .8, marginBottom: 4 }}>Welcome Traveler!</Typography>
+                        <Typography variant="h2" sx={{ color: customTheme => customTheme.palette.background.default, lineHeight: .8, marginBottom: 4 }}>Welcome Traveler!</Typography>
                         <SearchBar />
                     </Box>
 
@@ -116,8 +116,9 @@ export default function HomePage() {
                     <Typography variant='h4' m="0 4%">For you &#10024;</Typography>
                     <Stack direction="row" spacing={2}  /*Stack komponenten fra MUI er brugt her for at sætte elementerne horisontalt – opdagede denne måde, efter jeg havde brugt flex og flexdirection andre steder */
                         sx={{
-                            p: "0 3% 3%",
+                            p: "0 4% 8%",
                             overflow: "auto",
+                            
                         }}
                     >
                         <ScrollCards name="15% discount on your next booking!" image={beach} />
@@ -133,7 +134,7 @@ export default function HomePage() {
 
 
                 <Stack direction="column" alignItems="center">
-                    <Typography variant="h4" lineHeight="1" textAlign="center" gutterBottom>Plan your next vacation with us!</Typography>
+                    <Typography variant="h4" lineHeight="1" textAlign="center" gutterBottom p="0 3% 3%" >We'll help plan your perfect dream adventure</Typography>
 
                     <TravelAnimation />
 
@@ -147,13 +148,13 @@ export default function HomePage() {
 
                         }}
                     >
-                        <Typography variant="h5">Simple!</Typography>
+                        <Typography variant="h6">Simple!</Typography>
                         <hr className="dash" />
 
-                        <Typography variant="h5">Fast!</Typography>
+                        <Typography variant="h6">Fast!</Typography>
                         <hr className="dash" />
 
-                        <Typography variant="h5">Easy!</Typography>
+                        <Typography variant="h6">Easy!</Typography>
 
 
                     </Stack>
@@ -175,7 +176,7 @@ export default function HomePage() {
                     <Typography variant="h5" lineHeight="1" textAlign="center">Get inspired</Typography>
                     <Stack direction="row" spacing={2}
                         sx={{
-                            p: "0 4% 8%",
+                            p: "4% 6% 16%",
                             overflow: "auto",
                             
                         }}
@@ -198,7 +199,7 @@ export default function HomePage() {
                     <Typography variant="h5" lineHeight="1" textAlign="center">Explore unique cities</Typography>
                     <Stack direction="row" spacing={2}
                         sx={{
-                            p: "0 4% 8%",
+                            p: "4% 6% 16%",
                             overflow: "auto",
                             
                         }}
@@ -220,7 +221,7 @@ export default function HomePage() {
                     <Typography variant="h5" lineHeight="1" textAlign="center" gutterBottom>Experience extraordinary cultures</Typography>
                     <Stack direction="row" spacing={2}
                         sx={{
-                            p: "0 4% 8%",
+                            p: "4% 6% 16%",
                             overflow: "auto",
                             
                         }}
@@ -241,7 +242,7 @@ export default function HomePage() {
                     <Typography variant="h5" lineHeight="1" textAlign="center" gutterBottom>Travel more for less</Typography>
                     <Stack direction="row" spacing={2}
                         sx={{
-                            p: "0 4% 8%",
+                            p: "4% 6% 16%",
                             overflow: "auto",
                             
                         }}

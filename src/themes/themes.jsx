@@ -50,6 +50,7 @@ export const customTheme = (outerTheme) =>
       h5: {
         fontWeight: 100,
         fontFamily: 'Lalezar',
+        fontSize:'1.8em',
       },
       h6: {
         fontFamily: 'Lalezar',
